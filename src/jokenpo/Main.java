@@ -16,9 +16,9 @@ public class Main {
 		
 		do {
 		
-			System.out.println("Escolha entre 0, 1 e 2 , sendo : ");
-			System.out.println("Pedra = 0 ");
-			System.out.println("Papel = 1  ");
+			System.out.println("Escolha entre 0, 1 e 2 , sendo: ");
+			System.out.println("Pedra = 0");
+			System.out.println("Papel = 1");
 			System.out.println("Tesoura = 2");
 		
 			System.out.println("Jogador " + jogador1.getNome() + ", digite sua jogada: ");
