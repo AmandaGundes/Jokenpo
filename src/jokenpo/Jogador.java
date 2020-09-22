@@ -1,5 +1,6 @@
 package jokenpo;
 
+
 public class Jogador {
 	
 	private String nome;
@@ -7,7 +8,7 @@ public class Jogador {
 
 	public Jogador(String nome, int vitorias) {
 		this.nome = nome;
-		this.vitorias = vitorias;		
+		this.vitorias = vitorias;
 	}
 
 	public String getNome() {
@@ -25,5 +26,18 @@ public class Jogador {
 	public void setVitorias(int vitorias) {
 		this.vitorias = vitorias;
 	}
-
+	
+	public void retorno(int num) {
+		System.out.println();
+		if(num == 0) {
+			System.out.println(this.nome +  " escolheu PEDRA");
+		}
+		else if(num == 1) {
+			System.out.println(this.nome +  " escolheu PAPEL");
+		}
+		else {
+			System.out.println(this.nome + " escolheu TESOURA");
+		}
+	}
+	
 }
