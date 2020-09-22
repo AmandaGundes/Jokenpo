@@ -20,7 +20,7 @@ public class Jogada {
 
 	public int validarJogada(int num) {
 		int numero = num;
-		while(numero != 0 && numero != 1 && numero != 2) {
+		while (numero != 0 && numero != 1 && numero != 2) {
 			System.out.println("\nJogada inválida!");
 			Scanner scanner = new Scanner(System.in);
 			System.out.print("Escolha entre 0, 1, 2\nSua escolha: ");

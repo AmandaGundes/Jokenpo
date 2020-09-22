@@ -15,9 +15,9 @@ public class Main {
 		
 		Jogador jogador2 = new Jogador("Computador", 0);
 		
-		System.out.println("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __ ");
+		System.out.println("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ");
 		System.out.println("\nEscolha entre 0, 1 e 2 , sendo: ");
-		System.out.println("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __ ");
+		System.out.println("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ");
 		System.out.println("\nPEDRA = 0");
 		System.out.println("PAPEL = 1");
 		System.out.println("TESOURA = 2");
@@ -55,8 +55,6 @@ public class Main {
 					System.out.println(jogador1.getNome() + " possui " + jogador1.getVitorias() + " vitórias.");
 					System.out.println(jogador2.getNome() + " possui " + jogador2.getVitorias() + " vitórias.");
 					break;
-				default:
-					System.out.println("Jogada inválida!");
 				}
 				break;
 			case 1:
@@ -76,8 +74,6 @@ public class Main {
 					System.out.println(jogador2.getNome() + " possui " + jogador2.getVitorias() + " vitórias.");
 					System.out.println(jogador1.getNome() + " possui " + jogador1.getVitorias() + " vitórias.");
 					break;
-				default:
-					System.out.println("Jogada inválida!");
 				}
 				break;
 			case 2:
