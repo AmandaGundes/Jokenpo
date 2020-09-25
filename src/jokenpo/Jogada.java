@@ -40,7 +40,7 @@ public class Jogada {
 			System.out.println("\nJogada inválida!");
 			Scanner scanner = new Scanner(System.in);
 			System.out.print("Digite  0 para PEDRA, 1 para PAPEL ou 2 para TESOURA\nSua escolha: ");
-			numero = scanner.nextInt();
+			numero = validarNum(scanner);
 			continue;
 			}
 		
