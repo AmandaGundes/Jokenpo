@@ -28,15 +28,14 @@ public class Jogador {
 	}
 	
 	public void retorno(int num) {
-		System.out.println();
 		if(num == 0) {
-			System.out.println(this.nome +  " escolheu PEDRA");
+			System.out.println("\n" + this.nome +  " escolheu PEDRA");
 		}
 		else if(num == 1) {
-			System.out.println(this.nome +  " escolheu PAPEL");
+			System.out.println("\n" + this.nome +  " escolheu PAPEL");
 		}
 		else {
-			System.out.println(this.nome + " escolheu TESOURA");
+			System.out.println("\n" + this.nome + " escolheu TESOURA");
 		}
 	}
 	

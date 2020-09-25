@@ -28,24 +28,21 @@ public class Jogada {
 				num.next();
 				System.out.println("\nJogada inválida!");
 				System.out.print("Digite 0 para PEDRA, 1 para PAPEL ou 2 para TESOURA\nSua escolha: ");
-				
 			}
 		}
 	}
-		
-		
+			
 	public int validarJogada(int num) {
 		int numero = num;
 		while (numero != 0 && numero != 1 && numero != 2) {
 			System.out.println("\nJogada inválida!");
 			Scanner scanner = new Scanner(System.in);
-			System.out.print("Digite  0 para PEDRA, 1 para PAPEL ou 2 para TESOURA\nSua escolha: ");
+			System.out.print("Digite 0 para PEDRA, 1 para PAPEL ou 2 para TESOURA\nSua escolha: ");
 			numero = validarNum(scanner);
 			continue;
 			}
 		
 		return this.elemento = numero;
 	}
-	
 	
 }

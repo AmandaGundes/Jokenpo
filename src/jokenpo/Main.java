@@ -7,6 +7,7 @@ public class Main {
 
 	public static void main(String args[]) {
 		System.out.println("..... JOGO JOKENPO .....");
+		System.out.println("REGRA: O jogo consiste em 3 rodadas. Quem possuir mais pontos ao final vence.");
 
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("\nDigite o nome do jogador: ");
@@ -67,7 +68,7 @@ public class Main {
 					System.out.println(jogador2.getNome() + " possui " + jogador2.getVitorias() + " vitórias.");
 					break;
 				case 1:
-					System.out.println("Empatou!");
+					System.out.println("Empate!");
 					break;
 				case 2:
 					System.out.println("\n" + jogador2.getNome() + " ganhou essa rodada!");
@@ -99,6 +100,7 @@ public class Main {
 			}
 
 		} while (jogador1.getVitorias() < 3 && jogador2.getVitorias() < 3);
+		
 		if (jogador1.getVitorias() == 3) {
 			System.out.println("\n" + jogador1.getNome() + " é o grande vencedor!");
 		}
