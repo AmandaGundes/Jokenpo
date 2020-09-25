@@ -1,5 +1,6 @@
 package jokenpo;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Jogada {
@@ -17,13 +18,28 @@ public class Jogada {
 	public void setElemento(int elemento) {
 		this.elemento = elemento;
 	}
-
+	
+	public static int validarNum(Scanner num) {
+		while(true) {
+			try {
+				return num.nextInt();
+			}
+			catch(InputMismatchException e) {
+				num.next();
+				System.out.println("\nJogada inválida!");
+				System.out.print("Digite 0 para PEDRA, 1 para PAPEL ou 2 para TESOURA\nSua escolha: ");
+				
+			}
+		}
+	}
+		
+		
 	public int validarJogada(int num) {
 		int numero = num;
 		while (numero != 0 && numero != 1 && numero != 2) {
 			System.out.println("\nJogada inválida!");
 			Scanner scanner = new Scanner(System.in);
-			System.out.print("Escolha entre 0, 1, 2\nSua escolha: ");
+			System.out.print("Digite  0 para PEDRA, 1 para PAPEL ou 2 para TESOURA\nSua escolha: ");
 			numero = scanner.nextInt();
 			continue;
 			}
