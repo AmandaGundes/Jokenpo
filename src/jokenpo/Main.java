@@ -23,12 +23,13 @@ public class Main {
 		System.out.println("TESOURA = 2");
 
 		do {
-
+			Scanner escolha = new Scanner(System.in);
 			System.out.print("\nJogador " + jogador1.getNome() + ", digite sua jogada: ");
-			int elemento1 = scanner.nextInt();
+
+			int elemento1 = Jogada.validarNum(escolha);
 			Jogada jogada1 = new Jogada(elemento1);
-			jogada1.validarJogada(elemento1);
-			jogador1.retorno(elemento1);
+			int num = jogada1.validarJogada(elemento1);
+			jogador1.retorno(num);
 			
 			Random aleatorio = new Random();
 			int elemento2 = aleatorio.nextInt(2);
@@ -105,4 +106,5 @@ public class Main {
 			System.out.println("\n" + jogador2.getNome() + " é o grande vencedor!");
 		}
 	}
+
 }
