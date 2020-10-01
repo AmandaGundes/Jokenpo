@@ -21,9 +21,11 @@ public class Jogada {
 	public int validarJogada(int num) {
 		int numero = num;
 		while (numero != 0 && numero != 1 && numero != 2) {
+			System.out.println("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ");
 			System.out.println("\nJogada inválida!");
 			Scanner scanner = new Scanner(System.in);
-			System.out.print("Escolha entre 0, 1, 2\nSua escolha: ");
+			System.out.println("Escolha entre 0, 1 e 2 para prosseguir com o jogo.");
+			System.out.print("\nDigite sua jogada: ");
 			numero = scanner.nextInt();
 			continue;
 			}
